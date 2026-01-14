@@ -1,5 +1,7 @@
 <?php
 
+$resultado = '';
+
 if (isset($_GET['btn_calcular'])) {
 
     $n1 = $_GET['n1'];
@@ -13,6 +15,11 @@ if (isset($_GET['btn_calcular'])) {
     echo '<pre>';
     print_r($_GET);
     echo '</pre>';
+
+    // Para ver o resultado
+    // var_dump($resultado);
+    // // ou
+    // echo $resultado;
 }
 
 ?>
@@ -31,6 +38,8 @@ if (isset($_GET['btn_calcular'])) {
 
         <h3>Digite aqui seu primeiro numero:</h3>
         <input name="n1" placeholder="Digite aqui...">
+
+        <h3>Para somar</h3>
 
         <h3>Digite aqui seu segundo numero:</h3>
         <input name="n2" placeholder="Digite aqui...">
